@@ -1,0 +1,1126 @@
+@font-face {
+    font-family: claredon;
+    src: url(fonts/Clarendon\ Bold.otf);
+}
+@font-face {
+    font-family: avenir;
+    src: url(fonts/AvenirNextCyr-Regular.ttf);
+}
+@font-face {
+    font-family: pacifico;
+    src: url(fonts/Pacifico.ttf);
+}
+@font-face {
+    font-family: vanhelsing;
+    src: url(fonts/Van\ Helsing.ttf);
+}
+@font-face {
+    font-family: nova;
+    src: url(fonts/Mark\ Simonson\ \ Proxima\ Nova\ Light.otf);
+}
+@font-face {
+    font-family: Pixel;
+    src: url(fonts/MinecraftRegular-Bmg3.otf);
+}
+.wholebody {
+    padding-bottom: 1030px;
+}
+.companylogo {
+    width:80px;
+    height: 80px;
+    border-radius: 80px;
+    position: absolute;
+    top: 100px;
+}
+.contacttext {
+    font-family: nova;
+    color: rgba(11, 197, 154, 0.985);
+    margin-left: 50px;
+}
+.timetext {
+    position: absolute;
+    top: 1px;
+    left: 320px;
+    color:  rgba(11, 197, 154, 0.985);
+    font-size: 15px;
+    z-index: 1;
+}
+.companyname {
+    font-family: nova;
+    font-size: 30px;
+    position: absolute; 
+    top: 96px;
+    left: 100px;
+    color: white;
+}
+.icon:active,.ico2:active,.ico3 :active {
+    opacity: 0.5;
+}
+.button1 {
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    font-family: pacifico;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+
+}
+.button1:active {
+    opacity: 0.6;
+}
+.button2 {
+    position: absolute;
+    top: 120px;
+    left: 650px;
+    font-family: pacifico;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.button2:active {
+    opacity: 0.6;
+}
+.button3 {
+    position: absolute;
+    top: 120px;
+    left: 802px;
+    font-family: pacifico;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.button3:active {
+    opacity: 0.6;
+}
+.button4 {
+    position: absolute;
+    top: 120px;
+    left: 970px;
+    font-family: pacifico;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.button4:active {
+    opacity: 0.6;
+}
+.button5 {
+    position: absolute;
+    top: 120px;
+    left: 1125px;
+    color: white;
+    font-family: pacifico;
+    font-size: 25px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.button5:active {
+    opacity: 0.6;
+}
+.button6 {
+    font-family: avenir;
+    padding: 22px 35px 22px 35px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(255, 30, 0, 0.628);
+    border-color:  transparent;
+    border-radius: 5px;
+    position: absolute;
+    top: 108px;
+    left: 1290px;
+    cursor: pointer;
+}
+.button6:active {
+    opacity: 0.6;
+}
+
+.upperline {
+    width:50px;
+    height: 5px;
+    background-color: rgb(255, 0, 200);
+    border-radius: 5px;
+    position: absolute;
+    top: 130px;
+    left: 1800px;
+    z-index: 1;
+    transform: rotate(0deg);
+    transition: transform 1090ms;
+
+}
+.middleline {
+    width:50px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 162, 0);
+    position: absolute;
+    top: 139.2px;
+    left: 1800px;
+    z-index: 1;
+    transform: translateX(0px) translateY(0px) scaleX(1);
+    transition: transform 1050ms;
+}
+.lowerline {
+    width:50px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(120, 2, 255);
+    position: absolute;
+    top: 149px;
+    left: 1800px;
+    z-index: 1;
+    transform: rotate(0deg);
+    transition: transform 1090ms;
+}
+input {
+    position: absolute;
+    top: 132px;
+    left: 1815px;
+    opacity: 0;
+    z-index: 2;
+}
+input:checked + .upperline {
+
+   transform: rotate(45deg) translateX(12px) translateY(15px) ;
+   transition: transform 1090ms;
+}
+input:checked ~ .lowerline {
+
+    transform: rotate(-45deg);
+    transition: transform 1090ms;
+ }
+input:checked ~ .middleline {
+    background-color: rgba(9, 180, 237, 0.789);
+    transition: background-color 1090ms;
+    transform: translateX(-214px) translateY(50px) scaleX(3.5);
+    transition: transform 1050ms;
+}
+input:checked ~ .slidebarbody {
+    transform: translatex(1500px) translateY(90px);
+    transition: transform 1090ms;
+}
+
+ .slidebarbody {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to bottom, #040404, #3d3b3b, #4f4d4d);
+    border-radius: 20px;
+    transform:translateX(2000px) translateY(50px);
+    transition: transform 1090ms;
+       
+ }
+ /*Remember to add same CSS properties to work with TRANSFORMATIONS properly*/
+.text1 {
+
+font-family: pixel;
+font-size: 40px;
+margin-left: 15px;
+color: white;
+
+
+}
+.guide {
+font-family: pacifico;
+position: absolute;
+font-size: 30px;
+top: 75px;
+left: 100px;
+color: white;
+cursor: pointer;
+
+
+}
+.guide:hover {
+    background-color: rgba(224, 14, 119, 0.629);
+    padding-left: 100px;
+    padding-right: 210px;
+    left: 0px;
+    transition: background-color 250ms;
+    border-radius: 50px;
+    
+    
+}
+.guide:active {
+    opacity: 0.6;
+}
+.support {
+    font-family: pacifico;
+position: absolute;
+font-size: 30px;
+color: white;
+top: 140px;
+left:100px;
+cursor: pointer;
+
+
+
+}
+.support:hover {
+    background-color: rgba(224, 14, 119, 0.629);
+    padding-left: 100px;
+    padding-right: 190px;
+    left: 0px;
+    transition: background-color 250ms;
+    border-radius: 50px;
+   
+}
+.support:active {
+    opacity: 0.6;
+}
+.article {
+    font-family: pacifico;
+position: absolute;
+font-size: 30px;
+color: white;
+top: 200px;
+left: 100px;
+cursor: pointer;
+}
+.article:hover {
+    background-color: rgba(224, 14, 119, 0.629);
+    padding-left: 100px;
+    padding-right: 150px;
+    left: 0px;
+    transition: background-color 250ms;
+    border-radius: 50px;
+   
+    
+    
+}
+.article:active {
+    opacity: 0.6;
+}
+.weather {
+    font-family: pacifico;
+position: absolute;
+font-size: 30px;
+color: white;
+top: 264px;
+left: 100px;
+cursor: pointer;
+
+}
+.weather:hover {
+    background-color: rgba(224, 14, 119, 0.629);
+    padding-left: 100px;
+    padding-right: 180px;
+    left: 0px;
+    transition: background-color 250ms;
+    border-radius: 50px;   
+}
+.weather:active {
+    opacity: 0.6;
+}
+.maps {
+    font-family: pacifico;
+position: absolute;
+font-size: 30px;
+color: white;
+top: 329px;
+left: 100px;
+cursor: pointer;
+
+
+}
+.maps:hover {
+    background-color: rgba(224, 14, 119, 0.629);
+    padding-left: 100px;
+    padding-right: 220px;
+    left: 0px;
+    transition: background-color 250ms;
+    border-radius: 50px;
+    
+    
+    
+}
+.maps:active {
+    opacity: 0.6;
+}
+.event {
+    font-family: pacifico;
+position: absolute;
+font-size: 30px;
+color: white;
+top: 395px;
+left: 100px;
+cursor: pointer;
+
+}
+.event:hover {
+    border-radius: 50px;
+    background-color: rgba(224, 14, 119, 0.629);
+padding-left: 100px;
+padding-right:210px;
+border-radius: 50px;
+left: 0px;
+transition: background-color 250ms;
+}
+.event:active {
+    opacity: 0.6;
+}
+.navbarline {
+    width: 70px;
+    height: 5px;
+    background-color: rgb(220, 70, 54);
+    position: absolute;
+    top: 170px;
+    left: 506px;
+    border-radius: 5px;
+    transform: translatex(0px);
+    transition: 1050ms;    
+}
+.button2:hover ~ .navbarline {
+
+transform: translateX(150px);
+transition: transform 1050ms;
+}
+.button3:hover ~ .navbarline {
+
+transform: translateX(300px);
+transition: transform 1050ms;
+    }
+.button4:hover ~ .navbarline {
+
+ transform: translateX(459px);
+ transition: transform 1050ms;
+ } 
+.button5:hover ~ .navbarline {
+
+transform: translateX(630px);
+transition: transform 1050ms;
+ }
+.background-video {
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 1903px;
+    
+}
+.img1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1089px;
+    left: 200px;
+    border-radius: 15px;
+    transform: rotateX(0deg) translatey(0px);
+    transition: 1050ms;
+}
+.img2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1089px;
+    left: 500px;
+    border-radius: 15px;
+    transform: rotatey(0deg) translatey(0px);
+    transition: 2050ms;
+}
+.img3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1089px;
+    left: 800px;
+    border-radius: 15px;
+    transform: rotateX(0deg) translatey(0px);
+    transition: 2050ms;
+}
+.img4 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1089px;
+    left: 1100px;
+    border-radius: 15px;
+    transform: rotatey(0deg) translatey(0px);
+    transition: 2050ms;
+}
+.img5 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1089px;
+    left: 1400px;
+    border-radius: 15px;
+    transform: rotatez(0deg) translatey(0px);
+    transition: 2050ms;
+}
+.img1:hover {
+    transform: rotatey(360deg) translatey(-25px);
+    transition: 2050ms;
+}
+.img2:hover {
+    transform: rotatez(-360deg) translatey(-25px);
+    transition: 2050ms;
+}
+.img3:hover {
+    transform: rotateX(-360deg) translatey(-25px);
+    transition: 2050ms;
+}
+.img4:hover {
+    transform: rotatey(-360deg) translatey(-25px);
+    transition: 2050ms;
+}
+.img5:hover {
+    transform: rotatez(-360deg) translatey(-25px);
+    transition: 2050ms;
+}
+.img1:hover ~ .imgtext1 {
+    transform: scale(0.6) translateY(56px) translateX(-250px);
+    transition: transform 1050ms;
+    
+}
+.img2:hover ~ .imgtext2 {
+    transform: scale(0.6) translateY(250px) translateX(-250px);
+    transition: transform 1050ms;
+}
+.img3:hover ~ .imgtext3 {
+    transform: scale(0.6) translateY(250px) translateX(550px);
+    transition: transform 1050ms;
+}
+.img4:hover ~ .imgtext4 {
+    transform: scale(0.6) translateY(220px) translateX(900px); 
+    transition: transform 1090ms;
+}
+.img5:hover ~ .imgtext5 {
+    transform: scale(0.6) translateX(105px) translateY(205px);
+    transition: 1050ms;
+}
+
+
+.imgtext1 {
+    position: absolute;
+    top: 1200px;
+    line-height: 30px;
+    font-family: nova;
+    color: rgb(16, 116, 150);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.133);
+    width: 800px;
+    border-radius: 10px;
+    transform: scale(0) translateY(0px) translateX(0px);
+    transition: transform 1090ms;  
+}
+.imgtext2 {
+    color: black;
+    position: absolute;
+    top: 1100px;
+    left: 300px;
+    width: 800px;
+    font-family: avenir;
+    font-size: 20px;
+    background-color: navajowhite;
+    border-radius: 10px;
+    color: rgb(218, 82, 102);
+    transform: scale(0) translateY(0px) translateX(0px);
+    transition: transform 1090ms;  
+    line-height: 40px;
+    
+}
+.imgtext3 {
+    color: black;
+    position: absolute;
+    top: 1100px;
+    left: 300px;
+    width: 800px;
+    font-family: avenir;
+    font-size: 20px;
+    background-color: rgb(16, 116, 150);
+    border-radius: 10px;
+    color: rgb(198, 208, 226);
+    transform: scale(0) translateY(0px) translateX(9050px);
+    transition: transform 1050ms;  
+    line-height: 40px;
+    
+}
+.imgtext4 {
+    color: black;
+    position: absolute;
+    top: 1100px;
+    left: 300px;
+    width: 800px;
+    font-family: avenir;
+    font-size: 20px;
+    background-color: rgb(40, 183, 90);
+    border-radius: 10px;
+    color: rgb(198, 208, 226);
+    transform: scale(0) translateY(0px) translateX(90050px); 
+    transition: transform 2090ms;
+    line-height: 40px;
+    
+}
+.imgtext5 {
+    color: black;
+    position: absolute;
+    top: 1100px;
+    left: 1100px;
+    width: 800px;
+    font-family: avenir;
+    font-size: 20px;
+    background-color: rgba(145, 226, 39, 0.185);
+    transform: scale(0);
+    transition: 1050ms;
+    border-radius: 10px;
+    color: rgb(119, 150, 207);
+    line-height: 35px;
+}
+.endtext {
+    color: rgba(42, 198, 102, 0.976);
+    position: absolute;
+    top: 1500px;
+    font-size: 50px;
+    left: 600px;
+    font-family: vanhelsing;
+}
+.temple {
+    position: absolute;
+    top: 1800px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 1050ms;
+    
+}
+.zoo {
+    position: absolute;
+    top: 2300px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+.gardens {
+    position: absolute;
+    top: 2800px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+.palace {
+    position: absolute;
+    top: 3400px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+}
+.temple:hover {
+    transform: translateX(0px) ;
+    animation: floating 3s ease-in-out infinite;    
+}
+@keyframes floating {
+    0% {
+        transform: translateY(0px) scale(0.6) ;   
+    }
+    50% {
+        transform: translateY(-50px) scale(0.6);   
+    }
+    100% {
+        transform: translateY(0px) scale(0.6);    
+    }
+}
+.temple:hover ~ .templename {
+    transform: translateX(50px);
+    transition: transform 1s;
+}
+.temple:hover ~ .templeabout {
+    transform: translateX(50px);
+    transition: transform 1.9s;
+}
+.zoo:hover ~ .zooname {
+    transform: translateX(50px);
+    transition: transform 1s;
+}
+.zoo:hover ~ .zooabout {
+    transform: translateX(50px);
+    transition: transform 1.9s;
+}
+.zoo:hover {
+    transform: translateX(0px) ;
+    animation: floating 3s ease-in-out infinite;    
+}
+.gardens:hover {
+    transform: translateX(0px) ;
+    animation: floating 3s ease-in-out infinite;    
+}
+.gardens:hover ~ .gardenname {
+    transform: translatey(50px);
+    transition: transform 1s;
+}
+.gardens:hover ~ .gardenabout {
+    transform: translatey(50px);
+    transition: transform 1.9s;
+}
+.palace:hover {
+    transform: translateX(0px) ;
+    animation: floating 3s ease-in-out infinite;
+}
+.palace:hover ~ .palacename {
+    transform: translatey(-50px);
+    transition: transform 1s;
+}
+.palace:hover ~ .palaceabout {
+    transform: translatey(-50px);
+    transition: transform 1.9s;
+}
+
+.templename {
+    color: black;
+    position: absolute;
+    top: 1800px;
+    left: 1000px;
+    font-family: Avenir;
+    font-size: 30px;
+    transform: translateX(-500px) scale(0);
+    transition: transform 1s;
+}
+.templeabout {
+    color: black;
+    position: absolute;
+    top: 1900px;
+    width: 900px;
+    left: 800px;
+    font-size: 20px;
+    font-family: Tahoma;
+    line-height: 30px;
+    transform: translateX(-500px) scale(0);
+    transition: transform 1s;   
+}
+.zooname {
+    position: absolute;
+    color: black;
+    top: 2300px;
+    left: 1000px;
+    font-size: 30px;
+    font-family: nova;
+    transform: translateX(500px) scale(0);
+    transition: transform 1s;
+}
+.zooabout {
+    position: absolute;
+    color: black;
+    top: 2400px;
+    left: 750px;
+    font-size: 20px;
+    width: 900px;
+    font-family: tahoma;
+    line-height: 30px;
+    transform: translateX(500px) scale(0);
+    transition: transform 1s;
+}
+.gardenname {
+    position: absolute;
+    top: 2790px;
+    left: 1100px;
+    color: black;
+    font-size: 30px;
+    font-family: Arial;
+    transform: translatey(-500px) scale(0);
+    transition: transform 1s;
+}
+.gardenabout {
+    color: black;
+    position: absolute;
+    top: 2890px;
+    left: 800px;
+    width: 1000px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: tahoma;
+    transform: translateY(-500px) scale(0);
+    transition: transform 1s;
+}
+.palacename {
+    color: black;
+    position: absolute;
+    top: 3440px;
+    left: 1050px;
+    font-size: 30px;
+    font-family: nova;
+    transform: translateY(500px) scale(0);
+    transition: transform 1s;
+}
+.palaceabout {
+    color: black;
+    position: absolute;
+    top: 3550px;
+    left: 600px;
+    width: 1200px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: tahoma;
+    transform: translateY(500px) scale(0);
+    transition: transform 1s;
+}
+.endtext1 {
+    color: black;
+    position: absolute;
+    top: 4190px;
+    left: 590px;
+    font-family: avenir;
+    font-size: 40px;
+}
+.hotel {
+    position: absolute;
+    top: 4500px;
+    left: 650px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    transition: transform 1090ms;
+}
+.hotel:hover {
+    transform: scale(0.8);
+    transition: transform 1090ms;
+    cursor: pointer;
+}
+.hotel:active {
+    opacity: 0.8;
+}
+.restaurant {
+    position: absolute;
+    top: 4500px;
+    left: 50px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    transition: transform 1090ms;
+}
+.restaurant:hover {
+    transform: scale(0.8);
+    transition: transform 1090ms;
+    cursor: pointer;
+}
+.restaurant:active {
+    opacity: 0.8;
+}
+.fun {
+    position: absolute;
+    top: 4500px;
+    left: 1250px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+    transition: transform 1090ms;
+}
+.fun:hover {
+    transform: scale(0.8);
+    transition: transform 1090ms;
+    cursor: pointer;
+}
+.fun:active {
+    opacity: 0.8;
+}
+.beginnertext {
+    color: White;
+    font-size: 40px;
+    font-family: avenir;
+    position: absolute;
+    top: 450px;
+    left: 600px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .keyword, .destination, .choose-category, .search, .torst {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+ .searchbar {
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    top: 600px;
+    left: 555px;
+    font-size: 20px;
+    font-family: dclaredon;
+    background-color: white;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .searchbar2 {
+    padding: 10px 30px 10px 30px;
+    position: absolute;
+    top: 600px;
+    left: 800px;
+    font-size: 20px;
+    font-family: dclaredon;
+    background-color: white;
+    border-color: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ .button {
+    padding: 10px 50px 10px 50px;
+    font-family: tahoma;
+    font-size: 15px;
+    position: absolute;
+    border-color:  rgb(19, 147, 226);
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(19, 147, 226);
+    top: 600px;
+    left: 1250px;
+ }
+ .button:hover {
+    background-color: rgb(33, 112, 161);
+    color: aqua;
+    transition: background-color 1050ms;
+ } 
+ .button:active {
+    opacity: 0.8;
+ }
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
